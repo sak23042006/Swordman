@@ -1,0 +1,10 @@
+catchy animated background and images 
+animation , actions and sounnd effect in seconds
+how to play
+select modes
+player name
+versus img
+increase the size of img
+light mode n dark mode
+mute opt
+bug fix

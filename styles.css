@@ -1,0 +1,184 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+.spc-btwn{
+    justify-content: space-between;
+}
+
+/* start page  */
+.main-start{
+    width: 100vw;
+    height: 100vh;
+}
+.start-background-video-container{
+    width: inherit;
+    height: inherit;
+}
+.start-background-video{
+    width: inherit;
+}
+.start-buttons{
+    width: 260px;
+    height: 220px;
+    padding: 20px 0 30px 0;
+    background-image: url("http://officialpsds.com/imageview/rk/jm/rkjm8j_large.png?1521316491");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 280px;
+    justify-content: space-evenly;
+}
+.start-button-container{
+    width: 110px;
+    height: 50px;
+    background-size: 110% 120%;
+    border-radius: 20px;
+    background-position: center;
+    background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
+}
+.about-game-button-container{
+    width: 200px;
+    height: 50px;
+    background-size: 110% 120%;
+    border-radius: 20px;
+    background-position: center;
+    background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
+    
+}
+.start-button,.about-game-button{
+    border: none;
+    padding: 10px;
+    letter-spacing: 3px;
+    color: #510D0A;
+    font-size: 19px;
+    font-weight: 900;
+    background-color: inherit;
+    border-radius: 10px;
+}
+.start-button:hover,.about-game-button:hover{
+    color: #A6D9F7;
+    animation: forwards;
+    cursor: pointer;
+}
+
+/* --------------------------------------- */
+
+/* play page */
+
+.main-start{
+    width: 100vw;
+    height: 100vh;
+}
+.play-background-video-container{
+    width: inherit;
+    height: inherit;
+}
+.play-background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.absolute-navbar{
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 15px 40px;
+}
+.navbar{
+    justify-content: space-between;
+    color: red;
+}
+  
+.absolute-contents{
+    position: relative;
+    top: 90px;
+    height: 500px;
+    width: 600px;
+    background-image: url("./img/1555951006_4327-removebg-preview.png");
+    background-size: 100% 100%;
+    color: #f1f1f1;
+  }
+.player-name,.mode,start-game{
+    width: 200px;
+}
+.name-mode-start{
+    width: inherit;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 120px 0;
+}
+.player-name{
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #510D0A;
+    font-weight: 900;
+    background-position: center;
+    background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
+}
+.how-to-play{
+    background-color: transparent;
+    border: none;
+}
+.how-to-play:hover{
+    cursor: pointer;
+}
+
+.mode{
+    width:250px ;
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #510D0A;
+    font-weight: 900;
+    background-position: center;
+    background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
+}
+.start-game{
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+    color: #510D0A;
+    font-weight: 900;
+    background-position: center;
+    background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
+}
+.options{
+    border: none;
+    background-color:#ffffff83;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 16px;
+}
+.player-name:hover,.start-game:hover,.mode:hover{
+    color: #A6D9F7;
+    animation: forwards;
+    cursor: pointer;
+}
