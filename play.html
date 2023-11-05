@@ -6,11 +6,12 @@
     <title>Swordsman</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    
 </head>
 <body>
     <div class="main-play">
         <div class="play-background-video-container">
-            <video width="1535px" height="765px" aria-setsize="strech" loop autoplay class="play-background-video" src="./videos/play-bg-video.mp4"  muted playsinline></video>
+            <video alt="play-bg-video" width="1535px" height="765px" aria-setsize="strech" loop autoplay class="play-background-video" src="./videos/play-bg-video.mp4"  muted playsinline></video>
         </div>
         <div class="absolute-navbar">
             <div class="navbar flex">
@@ -39,11 +40,12 @@
         <div class="absolute-contents">
             <div class="name-mode-start  flex">
                 <div class="player-name-container">
-                    <input class="player-name" placeholder="Player Name" type="text" name="" id="" >
+                    <p id="player-name-text">Player Name :</p>
+                    <input class="player-name"  type="text" name="" id="" >
                 </div>
                 <div class="mode">
                     <div class="select-mode">
-                        <label for="select">Select Mode :</label>
+                        <label class="select-mode-text" for="select">Select Mode :</label>
                         <select class="options" name="Select-mode" id="select">
                             <option id="easy" value="easy">Easy</option>
                             <option id="medium" value="medium">Medium</option>
@@ -52,11 +54,10 @@
                     </div>
                 </div>
                 <div class="start-game-container">
-                    <button class="start-game">Start Game</button>
+                    <button id="start-game" class="start-game">Start Game</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
-</html>
+<script src="app.js" ></script>

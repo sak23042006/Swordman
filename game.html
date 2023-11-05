@@ -6,16 +6,32 @@
     <title>Swordsman</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main-game">
-        <div class="name-of-players">
-            <div class="player1-name"></div>
-            <div class="vs-img"></div>
-            <div class="player2-name"></div>
+        <div class="name-of-players flex spc-btwn">
+            <div class="player1-name flex spc-btwn">
+                <img width="50px" src="./img/logo1.png" alt="logo">
+                <p>Player1 Name</p>
+                <div class="sword-count flex spc-btwn">
+                    <span class="num-of-swords">1</span>
+                    <img width="50px" src="./img/sword img.png" alt="sword">
+                </div>
+            </div>
+            <div class="vs-img">
+                <img width="200px" height="60px" src="./img/vs.png" alt="vs-img">
+            </div>
+            <div class="player2-name flex">
+                <div class="sword-count flex">
+                    <span class="num-of-swords">100</span>
+                    <img width="50px" src="./img/sword img.png" alt="sword">
+                </div>
+                <p>Player2 Name</p>
+                <img width="50px" src="./img/logo1.png" alt="logo">
+            </div>
         </div>
-        <div class="game-container">
-            <div class="villain" id="villain"></div>
+        <div class="game-container grid">
             <div class="soldiers" id="soldier1">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
             </div>
@@ -28,8 +44,8 @@
             <div class="soldiers" id="soldier4">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
             </div>
-            <div class="soldiers" id="soldier5">
-                <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
+            <div class="villain" id="villain">
+                <img src="./img/broken hero.png" alt="broken-hero">
             </div>
             <div class="soldiers" id="soldier6">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
@@ -76,6 +92,9 @@
             <div class="soldiers" id="soldier20">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
             </div>
+            <div class="hero" id="hero">
+                <img src="./img/hero.png" alt="hero">
+            </div>
             <div class="soldiers" id="soldier21">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
             </div>
@@ -85,7 +104,9 @@
             <div class="soldiers" id="soldier23">
                 <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="soldier">
             </div>
-            <div class="hero" id="hero"></div>
+            <div class="soldiers" id="soldier24">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.tJVIPW62vtkwvpCBmyCXcQHaHa&pid=Api&P=0&h=180" alt="">
+            </div>
         </div>
     </div>
 </body>
