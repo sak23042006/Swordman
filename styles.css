@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@font-face {
+    font-family: ninja;
+    src: url("./fonts/NeverSettleDemo-z8dnX.ttf");
+}
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 body{
+    
     margin: 0;
     padding:0;
     /* overflow: hidden; */
@@ -32,6 +41,7 @@ body{
 }
 .start-background-video{
     width: inherit;
+    height: inherit;
 }
 .start-buttons{
     width: 260px;
@@ -47,6 +57,7 @@ body{
     right: 20px;
     top: 280px;
     justify-content: space-evenly;
+    
 }
 .start-button-container{
     width: 110px;
@@ -71,13 +82,14 @@ body{
 }
 .start-button,.about-game-button{
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     letter-spacing: 3px;
     color: #510D0A;
-    font-size: 19px;
+    font-size: 25px;
     font-weight: 900;
     background-color: inherit;
     border-radius: 10px;
+    font-family: ninja;
 }
 .start-button:hover,.about-game-button:hover{
     color: #A6D9F7;
@@ -86,7 +98,7 @@ body{
 }
 @keyframes movement {
     from {height: 50px;}
-    to {height:55px;}
+    to {height:52px;}
 }
 
 /* --------------------------------------- */
@@ -120,8 +132,10 @@ body{
     color: red;
 }
 .absolute-contents{
+    font-family: ninja;
     position: relative;
     top: 90px;
+    letter-spacing: 2px;
     height: 500px;
     width: 600px;
     background-image: url("./img/1555951006_4327-removebg-preview.png");
@@ -147,28 +161,34 @@ body{
     border: none;
     border-radius: 10px;
     color: #510D0A;
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 900;
     background-position: center;
     background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
     position: relative;
     animation: movement 3s infinite;
+    font-family: ninja;
+    letter-spacing: 4px;
 }
 #player-name-text{
     color:#510D0A;
     font-weight: 900;
-    font-size: 22px;
+    font-size: 24px;
 }
 .how-to-play{
     background-color: transparent;
     border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
 }
 .how-to-play:hover{
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.732);
 }
 
 .mode{
-    width:250px ;
+    width:270px ;
     padding:10px;
     border: none;
     border-radius: 10px;
@@ -181,21 +201,23 @@ body{
 }
 .select-mode-text{
     font-weight: 900;
-    font-size: 20px;
+    font-size: 23px;
 }
 .start-game{
-    width: 140px;
+    width: 150px;
     height: 40px;
     border: none;
     border-radius: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 23px;
     color: #510D0A;
     font-weight: 900;
     background-position: center;
     background-image:url("https://images.freeimages.com/images/large-previews/16a/gil-s-old-sheet-of-paper-1195208.jpg");
     position: relative;
     animation: movement 3s infinite;
+    font-family: ninja;
+    letter-spacing: 3px;
 }
 .options{
     border: none;
@@ -204,12 +226,16 @@ body{
     color: #510D0A;
     font-weight: 900;
     height: 25px;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: ninja;
+    letter-spacing: 2px;
 }
 .player-name:hover,.start-game:hover,.mode:hover{
     color: #000000;
-    animation: forwards;
     cursor: pointer;
+}
+::placeholder{
+    color:#510D0A;
 }
 
 /* ------------------------------------------------ */
@@ -253,8 +279,14 @@ body{
     padding: 1px 5px;
     font-weight: 900;
 }
+.left-arrow{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
 .left-arrow:hover{
     cursor: pointer;
+    background: rgba(0, 0, 0, 0.44);
 }
 
 /* ------------------------------------- */
@@ -270,7 +302,7 @@ body{
 .game-container{
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
-    padding: 4% 30% 0 30%;
+    padding: 4% 20% 0 20%;
 }
 .name-of-players{
     padding: 20px 150px 10px 150px;
@@ -279,10 +311,13 @@ body{
     background-color: #AB651D;
     border-radius: 10px;
     height: 50px;
-    width: 350px;
+    width: 360px;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 30px
+    color: white;
+    font-size: 25px ;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 .num-of-swords{
     align-self: center;
@@ -302,13 +337,28 @@ body{
     width: 97px;
     height: 95px;
 }
+.soldiers:hover,.hero:hover,.villain:hover{
+    cursor: pointer;
+}
+#swordnum{
+    position: relative;
+    bottom: 100px;
+    font-size: 20px;
+    color: #510D0A;
+    font-weight: 900;
 
+}
+.timer{
+    padding: 10px 20px;
+    font-size: 40px;
+    border: 2px solid grey;
+}
 /* ------------------------------- */
 
 /* result page  */
 
 .main-result{
-    padding: 9% 10% 10% 10%;
+    padding: 9% 10% 5% 10%;
     width: 100vw;
     height: 100vh;
     background-image: url("./img/result.png");
@@ -334,13 +384,11 @@ body{
     font-weight: 700;
 }
 .playagain-quit{
-    padding: 0 0 0 20px;
     width: 350px;
 }
 .play-again-button:hover,.quit-button:hover{
     cursor:pointer;
 }
-
 
 /* ------------------------------- */
 /* about life  */
@@ -352,15 +400,16 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #ffffff;
-    padding: 5% 18%;
+    padding: 1% 18%;
     line-height: 36px;
     word-spacing: 5px;
     letter-spacing: 2px;
     
 }
 .para-container{
+    text-align: justify;
     padding: 3%;
-    background-color: #00000095;
+    background-color: #000000a2;
     border-radius: 20px;
     font-size: 25px;
     font-size: 900;
