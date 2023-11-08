@@ -36,8 +36,8 @@ body{
     height: 100vh;
 }
 .start-background-video-container{
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 .start-background-video{
     width: inherit;
@@ -117,15 +117,15 @@ body{
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    width: auto;
+    height: 100%;
 }
 
 .absolute-navbar{
     position: fixed;
     color: #f1f1f1;
     width: 100%;
-    padding: 15px 40px;
+    padding: 25px 40px;
 }
 .navbar{
     justify-content: space-between;
@@ -254,9 +254,9 @@ body{
     justify-content: space-between;
 }
 .instructions{
-    padding: 20px 60px;
+    padding: 20px 50px;
     margin: 30px 0 0 100px;
-    width: 730px;
+    width: 750px;
     height: 600px;
     flex-shrink: 0;
     line-height: 43px;
@@ -265,10 +265,10 @@ body{
     color: white;
     letter-spacing: 3px;
     font-weight: 900;
-    background: rgba(0, 0, 0, 0.44);
+    background: rgba(0, 0, 0, 0.485);
 }
 .instructions ul{
-    width: 600px;
+    width: 650px;
 }
 .how-to-play-container{
     justify-content: center;
@@ -362,6 +362,7 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url("./img/result.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     justify-content: space-between;
     flex-direction: column;
@@ -413,4 +414,50 @@ body{
     border-radius: 20px;
     font-size: 25px;
     font-size: 900;
+}
+
+@media (orientation: landscape) and (max-width: 480px) {
+
+    .main-start{
+        width: 100vw;
+        height: 100vh;
+    }
+    .start-background-video-container{
+        width: 100%;
+        height: 100%;
+    }
+    .start-background-video{
+        width: inherit;
+        height: inherit;
+    }
+    .start-buttons{
+        padding: 0;
+        width: 130px;
+        height: 100px;
+        right: 20px;
+        top: 70px;
+    }
+    .start-button-container{
+        padding: 1px 8px;
+        width: 50px;
+        height: 19px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation: none;
+    }
+    .about-game-button-container{
+        padding: 3px;
+        width: 90px;
+        height: 19px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation: none;
+    }
+    .start-button,.about-game-button{
+        padding: 0;
+        font-size: 12px;
+        height: 10px;
+        border-radius: 1px;
+        letter-spacing: 2px;
+    }
 }

@@ -1,4 +1,4 @@
-var howToPlay = new Audio("./audio/how to play.mp3")
+var howToPlay = new Audio("../audio/how to play.mp3")
 document.addEventListener("DOMContentLoaded",()=>{
     howToPlay.play()
 })
@@ -6,5 +6,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 var startExitHow = document.querySelector("#left-arrow-how")
 console.log(startExitHow);
 startExitHow.addEventListener("click",()=>{
-    location.href = "play.html"
+    location.href = "../play page/play.html"
 })
