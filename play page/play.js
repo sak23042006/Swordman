@@ -25,7 +25,7 @@ startGameButton.addEventListener("click",()=>{
 })
 var startExit = document.getElementById("left-arrow-play")
  startExit.addEventListener("click",()=>{
-    location.href = "../index.html"
+    location.href = "../index_start.html"
  })
 
 var howToPlay = document.querySelector(".how-to-play")

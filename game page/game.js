@@ -62,11 +62,14 @@ for (let i = 0; i < soldier.length; i++) {
             var swordAudio = new Audio("../audio/sword audio.mp3")
 
             swordAudio.play()
-
+            // removing soldier img and num of swords 
             soldier[i].removeChild(soldier[i].getElementsByTagName("img")[0]);
             soldier[i].removeChild(soldier[i].getElementsByTagName("span")[0]);
+
+            // creating an image tag 
             const villainImg = document.createElement("img");
-            villainImg.src = "../img/hero.png"; // Replace with your actual villain image path
+            villainImg.src = "../img/hero.png"; 
+            // Replace with your actual villain image path
             soldier[i].appendChild(villainImg);
         } 
         else {
@@ -95,24 +98,25 @@ function updateSwordCount() {
 var mode = localStorage.getItem("mode")
 const timerDisplay = document.querySelector(".alarm");
 
-
-
+// choosing time based on mode 
 switch (mode) {
     case "medium":
-        timeInSeconds = 15
+        timeInSeconds = 20
         break
     case "hard":
-        timeInSeconds = 10
+        timeInSeconds = 15
         break
     default:
-        timeInSeconds = 19
+        timeInSeconds = 25
         break
  }
 
- timerDisplay.innerHTML=15;
+
+ timerDisplay.innerHTML=25;
 
 function countdown() {
 
+    // timer dom 
     timerDisplay.textContent = timeInSeconds;
     timeInSeconds--;
 

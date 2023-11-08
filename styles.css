@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 body{
-    
     margin: 0;
     padding:0;
     /* overflow: hidden; */
@@ -31,18 +30,19 @@ body{
 }
 
 /* start page  */
-.main-start{
-    width: 100vw;
-    height: 100vh;
-}
 .start-background-video-container{
-    width: 100%;
-    height: 100%;
-}
-.start-background-video{
     width: inherit;
     height: inherit;
 }
+.start-background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 100%;
+}
+
+
 .start-buttons{
     width: 260px;
     height: 220px;
@@ -104,11 +104,6 @@ body{
 /* --------------------------------------- */
 
 /* play page */
-
-.main-start{
-    width: 100vw;
-    height: 100vh;
-}
 .play-background-video-container{
     width: inherit;
     height: inherit;
@@ -125,7 +120,7 @@ body{
     position: fixed;
     color: #f1f1f1;
     width: 100%;
-    padding: 25px 40px;
+    padding: 25px 50px;
 }
 .navbar{
     justify-content: space-between;
@@ -250,16 +245,16 @@ body{
     background-repeat: no-repeat;
 }
 .how-navbar{
-    padding: 10px 655px 10px 50px;
+    padding: 2% 42% 2% 3%;
     justify-content: space-between;
 }
 .instructions{
-    padding: 20px 50px;
+    padding: 1% 6%;
     margin: 30px 0 0 100px;
-    width: 750px;
-    height: 600px;
+    width: 50%;
+    height: 80%;
     flex-shrink: 0;
-    line-height: 43px;
+    line-height: 175%;
     font-size: 26px;
     border-radius: 20px;
     color: white;
@@ -351,6 +346,7 @@ body{
 .timer{
     padding: 10px 20px;
     font-size: 40px;
+    color: white;
     border: 2px solid grey;
 }
 /* ------------------------------- */
@@ -358,7 +354,7 @@ body{
 /* result page  */
 
 .main-result{
-    padding: 9% 10% 5% 10%;
+    padding: 9.5% 10% 5% 5%;
     width: 100vw;
     height: 100vh;
     background-image: url("./img/result.png");
@@ -368,12 +364,13 @@ body{
     flex-direction: column;
 }
 .win-or-lose-container{
-    word-spacing: 10px;
-    letter-spacing: 7px;
-    padding: 10px;
-    width: 600px;
+    font-family: ninja;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+    padding: 1%;
+    width: 800px;
     height: 100px;
-    font-size: 60px;
+    font-size: 55px;
     color: white;
 }
 .play-again-button,.quit-button{
@@ -418,18 +415,6 @@ body{
 
 @media (orientation: landscape) and (max-width: 480px) {
 
-    .main-start{
-        width: 100vw;
-        height: 100vh;
-    }
-    .start-background-video-container{
-        width: 100%;
-        height: 100%;
-    }
-    .start-background-video{
-        width: inherit;
-        height: inherit;
-    }
     .start-buttons{
         padding: 0;
         width: 130px;
@@ -446,7 +431,7 @@ body{
         animation: none;
     }
     .about-game-button-container{
-        padding: 3px;
+        padding: 2px 6px 0 6px;
         width: 90px;
         height: 19px;
         background-size: 100%;
@@ -454,7 +439,39 @@ body{
         animation: none;
     }
     .start-button,.about-game-button{
+        padding: 0 0 5px 0;
+        font-size: 12px;
+        height: 10px;
+        border-radius: 1px;
+        letter-spacing: 2px;
+    }
+
+    /* start page  */
+    .start-buttons{
         padding: 0;
+        width: 130px;
+        height: 100px;
+        right: 20px;
+        top: 70px;
+    }
+    .start-button-container{
+        padding: 1px 8px;
+        width: 50px;
+        height: 19px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation: none;
+    }
+    .about-game-button-container{
+        padding: 2px 6px 0 6px;
+        width: 90px;
+        height: 19px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        animation: none;
+    }
+    .start-button,.about-game-button{
+        padding: 0 0 5px 0;
         font-size: 12px;
         height: 10px;
         border-radius: 1px;

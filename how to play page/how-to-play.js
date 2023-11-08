@@ -1,3 +1,5 @@
+alert("use earphones for better quality")
+
 var howToPlay = new Audio("../audio/how to play.mp3")
 document.addEventListener("DOMContentLoaded",()=>{
     howToPlay.play()
