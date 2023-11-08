@@ -389,7 +389,7 @@ body{
 }
 
 /* ------------------------------- */
-/* about life  */
+/* about page  */
 
 .main-about{
     width: 100vw;
@@ -415,6 +415,8 @@ body{
 
 @media (orientation: landscape) and (max-width: 480px) {
 
+    /* start page */
+
     .start-buttons{
         padding: 0;
         width: 130px;
@@ -446,35 +448,92 @@ body{
         letter-spacing: 2px;
     }
 
-    /* start page  */
-    .start-buttons{
-        padding: 0;
-        width: 130px;
-        height: 100px;
-        right: 20px;
-        top: 70px;
+    /* play page  */
+
+    .play-background-video-container{
+        width: inherit;
+        height: inherit;
     }
-    .start-button-container{
-        padding: 1px 8px;
-        width: 50px;
-        height: 19px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        animation: none;
+    .play-background-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: 100%;
     }
-    .about-game-button-container{
-        padding: 2px 6px 0 6px;
-        width: 90px;
-        height: 19px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        animation: none;
+    
+    .absolute-navbar{
+        position: fixed;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 12px 10px;
     }
-    .start-button,.about-game-button{
-        padding: 0 0 5px 0;
-        font-size: 12px;
-        height: 10px;
-        border-radius: 1px;
+    .navbar{
+        justify-content: space-between;
+        color: red;
+    }
+    .absolute-contents{
+        font-family: ninja;
+        position: relative;
+        top: 20px;
         letter-spacing: 2px;
+        height: 200px;
+        width: 200px;
+        background-image: url("./img/1555951006_4327-removebg-preview.png");
+        background-size: 100% 100%;
+        color: #f1f1f1;
+      }
+    .player-name,.mode,start-game{
+        width: 50px;
     }
+    .name-mode-start{
+        width: inherit;
+        height: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content:safe;
+        padding: 1px 0 1px 0;
+    }
+    .player-name{
+        padding: 0px;
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        animation: none;
+        letter-spacing: 4px;
+    }
+    #player-name-text{
+        font-size: 12px;
+    }
+    .how-to-play{
+        padding: 1px;
+        border-radius: 5px;
+    }
+    .mode{
+        width:100px ;
+        padding:0px;
+        font-size: 12px;
+        animation: none;
+    }
+    .select-mode-text{
+        font-size: 12px;
+    }
+    .start-game{
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 12px;
+        animation: none;
+        letter-spacing: 1px;
+    }
+    .options{
+        border-radius: 10px;
+        height: 15px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
 }

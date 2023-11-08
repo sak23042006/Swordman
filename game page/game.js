@@ -112,7 +112,7 @@ switch (mode) {
  }
 
 
- timerDisplay.innerHTML=25;
+ timerDisplay.innerHTML=timeInSeconds;
 
 function countdown() {
 
